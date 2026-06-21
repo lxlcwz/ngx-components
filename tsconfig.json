@@ -7,6 +7,9 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "ngx-embdb-pdf": ["./dist/ngx-embdb-pdf"]
+    },
     "skipLibCheck": true,
     "isolatedModules": true,
     "experimentalDecorators": true,
@@ -26,6 +29,12 @@
     },
     {
       "path": "./demo/tsconfig.spec.json"
+    },
+    {
+      "path": "./@once/ngx-embdb-pdf/tsconfig.lib.json"
+    },
+    {
+      "path": "./@once/ngx-embdb-pdf/tsconfig.spec.json"
     }
   ]
 }

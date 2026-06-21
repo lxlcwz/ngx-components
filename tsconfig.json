@@ -19,5 +19,13 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true
   },
-  "files": []
+  "files": [],
+  "references": [
+    {
+      "path": "./demo/tsconfig.app.json"
+    },
+    {
+      "path": "./demo/tsconfig.spec.json"
+    }
+  ]
 }

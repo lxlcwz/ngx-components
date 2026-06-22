@@ -8,8 +8,8 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@once/components": ["./dist/once/components"],
-      "ngx-embdb-pdf": ["./dist/ngx-embdb-pdf"]
+      "@once/ngx-components": ["./dist/once/ngx-components"],
+      "@once/ngx-embdb-pdf": ["./dist/ngx-embdb-pdf"]
     },
     "skipLibCheck": true,
     "isolatedModules": true,
@@ -38,10 +38,10 @@
       "path": "./@once/ngx-embdb-pdf/tsconfig.spec.json"
     },
     {
-      "path": "./@once/components/tsconfig.lib.json"
+      "path": "./@once/ngx-components/tsconfig.lib.json"
     },
     {
-      "path": "./@once/components/tsconfig.spec.json"
+      "path": "./@once/ngx-components/tsconfig.spec.json"
     }
   ]
 }

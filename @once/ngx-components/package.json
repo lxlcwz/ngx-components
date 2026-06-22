@@ -1,5 +1,5 @@
 {
-  "name": "@once/components",
+  "name": "@once/ngx-components",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^22.0.0",

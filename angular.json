@@ -70,7 +70,8 @@
               "buildTarget": "demo:build:production"
             },
             "development": {
-              "buildTarget": "demo:build:development"
+              "buildTarget": "demo:build:development",
+              "port": 24000
             }
           },
           "defaultConfiguration": "development"

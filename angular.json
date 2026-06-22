@@ -81,7 +81,7 @@
         }
       }
     },
-    "ngx-embdb-pdf": {
+    "@once/ngx-embdb-pdf": {
       "projectType": "library",
       "root": "@once/ngx-embdb-pdf",
       "sourceRoot": "@once/ngx-embdb-pdf/src",
@@ -103,6 +103,32 @@
           "builder": "@angular/build:unit-test",
           "options": {
             "tsConfig": "@once/ngx-embdb-pdf/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "@once/components": {
+      "projectType": "library",
+      "root": "@once/components",
+      "sourceRoot": "@once/components/src",
+      "prefix": "zx",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "@once/components/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "@once/components/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "@once/components/tsconfig.spec.json"
           }
         }
       }

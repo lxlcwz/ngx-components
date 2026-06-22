@@ -70,7 +70,8 @@
               "buildTarget": "demo:build:production"
             },
             "development": {
-              "buildTarget": "demo:build:development"
+              "buildTarget": "demo:build:development",
+              "port": 24000
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +81,7 @@
         }
       }
     },
-    "ngx-embdb-pdf": {
+    "@once/ngx-embdb-pdf": {
       "projectType": "library",
       "root": "@once/ngx-embdb-pdf",
       "sourceRoot": "@once/ngx-embdb-pdf/src",
@@ -102,6 +103,32 @@
           "builder": "@angular/build:unit-test",
           "options": {
             "tsConfig": "@once/ngx-embdb-pdf/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "@once/ngx-components": {
+      "projectType": "library",
+      "root": "@once/ngx-components",
+      "sourceRoot": "@once/ngx-components/src",
+      "prefix": "zx",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "@once/ngx-components/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "@once/ngx-components/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "@once/ngx-components/tsconfig.spec.json"
           }
         }
       }
